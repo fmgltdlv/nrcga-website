@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Ticket - Call 811</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="NRCGA-Logo_Badge-Color-300x272.png" alt="NRCGA Logo" class="logo-img">
+                    <span class="logo-text">Nevada Regional Common Ground Alliance</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="about.html" class="dropdown-toggle">About NRCGA <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About NRCGA</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="bylaws.html">Bylaws</a></li>
+                        <li><a href="standing-rules.html">Standing Rules</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="about-811.html" class="dropdown-toggle">About 811 <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about-811.html">About 811</a></li>
+                        <li><a href="create-ticket.html">Create a Ticket</a></li>
+                        <li><a href="about-811-questions.html">General Questions</a></li>
+                    </ul>
+                </li>
+                <li><a href="training.html">Safety Training</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-toggle-icon">🌙</span>
+            </button>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label">Call 811</span>
+            <h1 class="page-title">Create a Ticket</h1>
+            <p class="page-subtitle">Request utility marking for your excavation project. Call 811 or use the form below to create a locate ticket.</p>
+        </div>
+    </section>
+
+    <!-- Important Notice -->
+    <section class="content-section">
+        <div class="container">
+            <div class="notice-box">
+                <h3>⚠️ Important: Call 811 First</h3>
+                <p>
+                    The fastest and most reliable way to create a locate ticket is by calling <strong>811</strong> directly. 
+                    This form is for informational purposes. For actual ticket creation, please call your local one-call center at 811.
+                </p>
+                <p style="margin-top: 1rem;">
+                    <strong>Call 811 at least 2-3 business days before you plan to dig.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticket Form -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h2>What You'll Need</h2>
+                    <p>When calling 811 or creating a ticket, have this information ready:</p>
+                    
+                    <ul class="info-list">
+                        <li><strong>Location</strong> - Exact address or description of where you'll be digging</li>
+                        <li><strong>Type of Work</strong> - What you're planning to do (fence, landscaping, construction, etc.)</li>
+                        <li><strong>Dig Date</strong> - When you plan to start digging</li>
+                        <li><strong>Contact Information</strong> - Your name, phone number, and email</li>
+                        <li><strong>Property Owner</strong> - If different from the person calling</li>
+                        <li><strong>Marking Instructions</strong> - Any special instructions for the locator</li>
+                    </ul>
+
+                    <div class="call-box" style="margin-top: 2rem; padding: 2rem; background: white; border-radius: 12px; text-align: center;">
+                        <div class="number-large" style="font-size: 4rem; margin-bottom: 0.5rem;">811</div>
+                        <p style="font-size: 1.25rem; font-weight: 600; color: var(--primary);">Call Before You Dig</p>
+                        <p style="margin-top: 0.5rem; color: var(--text-secondary);">Available 24/7</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <h2>Ticket Information Form</h2>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">
+                        This form is for reference only. Please call 811 to create an actual locate ticket.
+                    </p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Dig Location Address *</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="work-type">Type of Work *</label>
+                            <select id="work-type" name="work-type" required>
+                                <option value="">Select work type...</option>
+                                <option value="fence">Fence Installation</option>
+                                <option value="landscaping">Landscaping</option>
+                                <option value="tree">Tree Planting/Removal</option>
+                                <option value="deck">Deck/Patio Construction</option>
+                                <option value="pool">Pool Installation</option>
+                                <option value="driveway">Driveway/Sidewalk</option>
+                                <option value="construction">Construction Project</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="dig-date">Planned Dig Date *</label>
+                            <input type="date" id="dig-date" name="dig-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Any special instructions or additional information..."></textarea>
+                        </div>
+                        <div class="form-notice" style="padding: 1rem; background: #fff3cd; border-radius: 8px; margin-bottom: 1rem; font-size: 0.875rem;">
+                            <strong>Remember:</strong> This form is for reference only. You must call 811 to create an actual locate ticket.
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="alert('Please call 811 to create your locate ticket. This form is for reference only.');">Call 811 to Create Ticket</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Steps -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The 811 Process</h2>
+            </div>
+
+            <div class="process-steps">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>Call 811</h3>
+                    <p>Contact your local one-call center at least 2-3 business days before you plan to dig.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>Provide Information</h3>
+                    <p>Give the operator your dig location, type of work, and planned start date.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>Wait for Marking</h3>
+                    <p>Utility operators will mark the approximate location of underground lines within 2-3 business days.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h3>Verify Marks</h3>
+                    <p>Check that all utilities have been marked before you begin digging.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <h3>Dig Safely</h3>
+                    <p>Use hand tools or vacuum excavation within 18-24 inches of marked utilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="NRCGA-Logo_Badge-Color-300x272.png" alt="NRCGA Logo" class="logo-img footer-logo">
+                        <span class="logo-text">Nevada Regional Common Ground Alliance</span>
+                    </div>
+                    <p>Promoting public safety and damage prevention across Nevada.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="about.html">About NRCGA</a></li>
+                            <li><a href="about-811.html">About 811</a></li>
+                            <li><a href="index.html#training">Safety Training</a></li>
+                            <li><a href="index.html#events">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="calendar.html">Calendar</a></li>
+                            <li><a href="index.html#events">Committees</a></li>
+                            <li><a href="about-811.html">811 Tools</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="contact.html">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NRCGA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
