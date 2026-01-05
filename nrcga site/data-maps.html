@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data & Maps - NRCGA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+</head>
+<body>
+    <!-- Navigation Placeholder -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label">Resources</span>
+            <h1 class="page-title">Data & Maps</h1>
+            <p class="page-subtitle">Access Nevada damage prevention data and interactive maps.</p>
+        </div>
+    </section>
+
+    <!-- NV Field Data Link -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nevada Field Data</h2>
+                <p class="section-subtitle">Access comprehensive damage prevention data and statistics for Nevada.</p>
+            </div>
+
+            <div class="data-link-card">
+                <div class="data-link-content">
+                    <div class="data-icon">📊</div>
+                    <h3>NV Field Data</h3>
+                    <p>View detailed damage prevention data, statistics, and reports for Nevada. Access DIRT reports, damage trends, and industry insights.</p>
+                    <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Access NV Field Data</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nevada Damage Prevention Map</h2>
+                <p class="section-subtitle">Interactive map showing damage prevention information across Nevada.</p>
+            </div>
+
+            <div class="map-container">
+                <div id="nrcga-map"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Information -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-text" style="max-width: 800px; margin: 0 auto;">
+                <h2>About This Map</h2>
+                <p>
+                    This interactive map provides visual representation of damage prevention data and information across Nevada. 
+                    Use the map to explore regional data, identify trends, and access location-specific damage prevention resources.
+                </p>
+                <p style="margin-top: 1.5rem;">
+                    The map is regularly updated with the latest damage prevention statistics and information. For questions about 
+                    the data or to request additional information, please <a href="contact.html">contact NRCGA</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Leaflet Map
+        document.addEventListener('DOMContentLoaded', () => {
+            // Center map on Nevada (approximate center)
+            const map = L.map('nrcga-map').setView([39.5, -117.0], 6);
+
+            // Add OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                maxZoom: 19
+            }).addTo(map);
+
+            // Add markers for major Nevada cities
+            const cities = [
+                { name: 'Las Vegas', lat: 36.1699, lng: -115.1398 },
+                { name: 'Reno', lat: 39.5296, lng: -119.8138 },
+                { name: 'Carson City', lat: 39.1638, lng: -119.7674 },
+                { name: 'Henderson', lat: 36.0395, lng: -114.9817 },
+                { name: 'North Las Vegas', lat: 36.1989, lng: -115.1175 }
+            ];
+
+            cities.forEach(city => {
+                L.marker([city.lat, city.lng])
+                    .addTo(map)
+                    .bindPopup(`<strong>${city.name}</strong><br>NRCGA Service Area`);
+            });
+        });
+    </script>
+</body>
+</html>
+

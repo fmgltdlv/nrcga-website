@@ -1368,6 +1368,7 @@ body {
     border-radius: 12px;
     border: 1px solid var(--border);
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .member-item:hover {
@@ -1422,10 +1423,175 @@ body {
     color: var(--text-secondary);
     font-size: 0.9375rem;
     border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.associate-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: var(--primary);
+    background: var(--bg-primary);
 }
 
 [data-theme="dark"] .associate-item {
     background: var(--bg-dark);
+}
+
+/* Member Popup Modal */
+.member-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.member-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.member-modal-content {
+    background: var(--bg-primary);
+    border-radius: 16px;
+    padding: 2.5rem;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow-xl);
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.member-modal.active .member-modal-content {
+    transform: scale(1);
+}
+
+.member-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.member-modal-close:hover {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.member-modal-header {
+    margin-bottom: 1.5rem;
+    padding-right: 3rem;
+}
+
+.member-modal-header h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.member-modal-category {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.5rem;
+}
+
+[data-theme="dark"] .member-modal-category {
+    background: #4a7bc8;
+}
+
+.member-modal-body {
+    margin-top: 1.5rem;
+}
+
+.member-modal-info {
+    margin-bottom: 1.5rem;
+}
+
+.member-modal-info-item {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+}
+
+.member-modal-info-label {
+    font-weight: 600;
+    color: var(--text-secondary);
+    min-width: 140px;
+    margin-right: 1rem;
+}
+
+.member-modal-info-value {
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.member-modal-website {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.member-modal-website a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
+}
+
+.member-modal-website a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+[data-theme="dark"] .member-modal-website a {
+    color: #6ba3ff;
+}
+
+[data-theme="dark"] .member-modal-website a:hover {
+    color: #8bb5ff;
+}
+
+[data-theme="dark"] .member-modal {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+[data-theme="dark"] .member-modal-content {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
 }
 
 /* Documents Grid */
@@ -1477,6 +1643,79 @@ body {
 
 [data-theme="dark"] .document-card:hover {
     border-color: var(--primary);
+}
+
+/* Data & Maps */
+.data-link-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+}
+
+.data-link-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.data-link-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.data-link-content p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+[data-theme="dark"] .data-link-card {
+    background: var(--bg-secondary);
+}
+
+/* Map Container */
+.map-container {
+    margin-top: 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--border);
+}
+
+#nrcga-map {
+    height: 600px;
+    width: 100%;
+    z-index: 1;
+}
+
+[data-theme="dark"] .map-container {
+    border-color: var(--border);
+}
+
+/* Leaflet Dark Theme Override */
+[data-theme="dark"] .leaflet-container {
+    background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .leaflet-popup-content-wrapper {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .leaflet-popup-tip {
+    background: var(--bg-dark);
 }
 
 .membership-benefits h2 {
@@ -1962,6 +2201,23 @@ body {
 
     .documents-grid {
         grid-template-columns: 1fr;
+    }
+
+    .member-modal {
+        padding: 1rem;
+    }
+
+    .member-modal-content {
+        padding: 1.5rem;
+        max-height: 95vh;
+    }
+
+    .member-modal-header {
+        padding-right: 2.5rem;
+    }
+
+    .member-modal-header h3 {
+        font-size: 1.5rem;
     }
 }
 

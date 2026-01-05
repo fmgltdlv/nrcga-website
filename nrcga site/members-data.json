@@ -1,0 +1,387 @@
+{
+  "stakeholderMembers": [
+    {
+      "company": "Advanced Spade Company",
+      "stakeholderGroup": "Locator",
+      "votingMember": "Daniel Kimminau",
+      "website": "https://advancedspadecompany.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "AIMS Companies",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Bob Jeralds",
+      "website": "https://www.aimscompanies.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "AT&T",
+      "stakeholderGroup": "Telecommunications",
+      "votingMember": "Wayne Scott",
+      "website": "https://www.att.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Byrd Underground",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Tyler Byrd",
+      "website": "http://www.byrdunderground.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "C and S Co. Inc.",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Saundra Waggoner",
+      "website": "https://candscoinc.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "City of Boulder City Public Works",
+      "stakeholderGroup": "Public Works",
+      "votingMember": "Steve Priscu",
+      "website": "https://www.bcnv.org/221/Public-Works",
+      "type": "stakeholder"
+    },
+    {
+      "company": "City of Henderson Public Works",
+      "stakeholderGroup": "Public Works",
+      "votingMember": "Lance Olson",
+      "website": "https://www.cityofhenderson.com/government/departments/public-works",
+      "type": "stakeholder"
+    },
+    {
+      "company": "City of Las Vegas Public Works",
+      "stakeholderGroup": "Public Works",
+      "votingMember": "Kondala Mantri",
+      "website": "https://www.lasvegasnevada.gov/Government/Departments/Public-Works",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Clark County Public Works",
+      "stakeholderGroup": "Public Works",
+      "votingMember": "Sal Partida",
+      "website": "https://www.clarkcountynv.gov/government/departments/public_works_department/index.php",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Clark County Water Reclamation District",
+      "stakeholderGroup": "Sewer",
+      "votingMember": "Boyd Duchene",
+      "website": "https://www.cleanwaterteam.com/Pages/default.aspx",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Cox Communications",
+      "stakeholderGroup": "Telecommunications",
+      "votingMember": "Beryl Cox",
+      "website": "http://cox.com",
+      "type": "stakeholder"
+    },
+    {
+      "company": "ELM Utility Services",
+      "stakeholderGroup": "Locator",
+      "votingMember": "Harley Hartman",
+      "website": "https://elmllc.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Empire Cat",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Seth Hendrickson",
+      "website": "https://www.empire-cat.com/locations/henderson",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Ervin Cable Construction",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Andre Arandia",
+      "website": "https://ervincable.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "The Field Mapping Group",
+      "stakeholderGroup": "Locator",
+      "votingMember": "Charles Folashade Jr",
+      "website": null,
+      "type": "stakeholder"
+    },
+    {
+      "company": "GigaPower",
+      "stakeholderGroup": "Telecommunication",
+      "votingMember": "Greg Lane",
+      "website": "https://gigapower.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Google Fiber",
+      "stakeholderGroup": "Telecommunication",
+      "votingMember": "Michelle Koyle",
+      "website": "https://fiber.google.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Great Basin Gas Transmission Company",
+      "stakeholderGroup": "Pipeline",
+      "votingMember": "Rusty McLaughlin",
+      "website": "https://www.greatbasingtc.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "HF Sinclair",
+      "stakeholderGroup": "Pipeline",
+      "votingMember": "Mark Largesse",
+      "website": "https://www.hfsinclair.com/home/default.aspx",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Hole Hogz",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Robert McKechnie",
+      "website": "https://www.holehogz.com/Hydro-Excavation/1",
+      "type": "stakeholder"
+    },
+    {
+      "company": "JABCO. UN, Inc.",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Ines Esquivel",
+      "website": null,
+      "type": "stakeholder"
+    },
+    {
+      "company": "JBM Underground",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Mat Whalen",
+      "website": "https://jbmunderground.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "KCI Technologies, Inc.",
+      "stakeholderGroup": "Design Engineering",
+      "votingMember": "Rick Torrens",
+      "website": "http://www.kci.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Kern River Gas Transmission",
+      "stakeholderGroup": "Pipeline",
+      "votingMember": "Jeremy Crawford",
+      "website": "https://www.kernrivergas.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Las Vegas Paving",
+      "stakeholderGroup": "Road Builder",
+      "votingMember": "Scott Allen",
+      "website": "https://lasvegaspaving.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Las Vegas Valley Water District",
+      "stakeholderGroup": "Water",
+      "votingMember": "Mike Austin",
+      "website": "https://www.lvvwd.com",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Lumen",
+      "stakeholderGroup": "Telecommunications",
+      "votingMember": "Alonzo Trujillo",
+      "website": null,
+      "type": "stakeholder"
+    },
+    {
+      "company": "Mammoth Underground",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Kathy Bergman",
+      "website": null,
+      "type": "stakeholder"
+    },
+    {
+      "company": "Menichino Construction",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Vince Menichino",
+      "website": "https://menichinoconstruction.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "NPL Construction Co.",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Sean Murphy",
+      "website": "https://gonpl.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "New-Com",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Mario Guzman",
+      "website": "https://nclasvegas.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "NV Energy",
+      "stakeholderGroup": "Electricity",
+      "votingMember": "Kristen Garcia",
+      "website": "http://www.nvenergy.com",
+      "type": "stakeholder"
+    },
+    {
+      "company": "PelicanCorp",
+      "stakeholderGroup": "One-Call",
+      "votingMember": "Siddarth Munivelu",
+      "website": "https://pelicancorp.com/us/home",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Prospector Pipeline Company",
+      "stakeholderGroup": "Pipeline",
+      "votingMember": "Danielle Keelan",
+      "website": null,
+      "type": "stakeholder"
+    },
+    {
+      "company": "Public Utilities Commission of Nevada",
+      "stakeholderGroup": "Regulator",
+      "votingMember": "Dennis Bott",
+      "website": "http://www.puc.nv.gov",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Q&D Construction",
+      "stakeholderGroup": "Road Builder",
+      "votingMember": "Roy Halliburton",
+      "website": "https://qdconstruction.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "RP Weddell & Sons",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Cesar Castillo",
+      "website": "https://g.co/kgs/85FvUQF",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Southwest Gas",
+      "stakeholderGroup": "Natural Gas",
+      "votingMember": "Lynsay Demko",
+      "website": "https://www.swgas.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Stake Center Locating",
+      "stakeholderGroup": "Locator",
+      "votingMember": "Tom Fava",
+      "website": "https://www.stakecenter.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Team Fishel",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Marty Byars",
+      "website": "https://www.teamfishel.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Terra Contracting",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Paul Gibson",
+      "website": "https://terracontracting.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Tilson Tech",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Brendan Vargas",
+      "website": "https://tilsontech.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Truckee Meadows Water Authority",
+      "stakeholderGroup": "Water",
+      "votingMember": "Charles Atkinson",
+      "website": "https://tmwa.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "USA North 811",
+      "stakeholderGroup": "One-Call",
+      "votingMember": "Ryan White",
+      "website": "http://usanorth811.org/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "USIC",
+      "stakeholderGroup": "Locator",
+      "votingMember": "Mike Marrero",
+      "website": "https://www.usicllc.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "VCI Construction",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Rob Espinosa",
+      "website": "https://vcicom.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Western States Contracting",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Harold Lefler",
+      "website": "http://www.westernstatesco.com/",
+      "type": "stakeholder"
+    },
+    {
+      "company": "Xram Excavation",
+      "stakeholderGroup": "Excavator",
+      "votingMember": "Scotty Marx",
+      "website": "https://g.co/kgs/QqEWCLq",
+      "type": "stakeholder"
+    }
+  ],
+  "associateMembers": [
+    {
+      "company": "811 Spotter",
+      "type": "associate"
+    },
+    {
+      "company": "Arizona Pipeline Company",
+      "type": "associate"
+    },
+    {
+      "company": "DigContrax",
+      "type": "associate"
+    },
+    {
+      "company": "Flippin's Trenching",
+      "type": "associate"
+    },
+    {
+      "company": "Haaker Equipment Company",
+      "type": "associate"
+    },
+    {
+      "company": "National Trench Safety",
+      "type": "associate"
+    },
+    {
+      "company": "NEPTCO MULETAPE",
+      "type": "associate"
+    },
+    {
+      "company": "Norfield DP",
+      "type": "associate"
+    },
+    {
+      "company": "Silver Lake Construction",
+      "type": "associate"
+    },
+    {
+      "company": "Sub-T & Locating Dynamics",
+      "type": "associate"
+    },
+    {
+      "company": "Tecsolutions Consultants",
+      "type": "associate"
+    }
+  ]
+}
+
