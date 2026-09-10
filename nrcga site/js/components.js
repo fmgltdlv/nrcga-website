@@ -194,14 +194,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function applyRemoteSiteConfig() {
     if (!window.NRCGA_API) return;
+
+    let navData;
     try {
-        const [navData, settings] = await Promise.all([
-            window.NRCGA_API.get('/navigation'),
-            window.NRCGA_API.get('/settings'),
-        ]);
+        navData = await window.NRCGA_API.get('/navigation');
         if (navData && typeof navData === 'object' && navData.logo) {
             window.navConfig = navData;
         }
+    } catch (err) {
+        console.warn('Navigation API unavailable, using local nav-config.js', err);
+    }
+
+    try {
+        const settings = await window.NRCGA_API.get('/settings');
         if (settings && settings.footer) {
             window.nrcgaFooterSettings = settings.footer;
         }
@@ -217,7 +222,7 @@ async function applyRemoteSiteConfig() {
             if (settings.theme.accent) root.style.setProperty('--accent', settings.theme.accent);
         }
     } catch (err) {
-        console.warn('Site config API unavailable, using local nav-config.js', err);
+        console.warn('Settings API unavailable, using local defaults', err);
     }
 }
 
